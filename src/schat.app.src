@@ -1,0 +1,15 @@
+{application, schat, [
+    {description, ""},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        mnesia,
+        jiffy,
+        cowboy
+    ]},
+    {modules, [schat_app, schat_sup, schat_user_mng, schat_ws]},
+    {mod, {schat_app, []}},
+    {env, []}
+]}.
