@@ -8,6 +8,7 @@ start(_Type, _Args) ->
     ok = schat_user_mng:init(),
     Dispatch = cowboy_router:compile([
         {'_', [
+            {"/", cowboy_static, {priv_file, schat, "index.html"}},
             {"/ws", schat_ws, []}
         ]}
     ]),
