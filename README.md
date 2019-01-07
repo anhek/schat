@@ -1,0 +1,2 @@
+# schat
+Simple chat server
